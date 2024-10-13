@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-color: #FF69B4;
+  --secondary-color: #FF1493;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.gradient-text {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-pink-400 to-purple-600;
+}
+
+.gradient-button {
+  @apply bg-gradient-to-r from-pink-400 to-purple-600 text-white font-bold py-2 px-4 rounded-full transition-all duration-300 hover:from-pink-500 hover:to-purple-700;
+}
